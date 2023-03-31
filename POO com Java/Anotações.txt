@@ -1,0 +1,57 @@
+--------------- Programação Orientada a Objetos com Java ----------------
+
+-> Paradigma estruturado tem uma representação mais simplista. Já o paradigma orientado a objetos uma representação mais realista.
+
+-> Paradigma OO foca nas entidades e nos relacionamentos entre eles.
+
+-> Vantagens da OO: melhor coesão, acoplamento, coletor de lixo.
+
+-> OO: é um paradigma de análise, projeto e programação de sistemas de software baseado no composiçao e interação dos objetos.
+
+-> Fundamentos:
+
+1. Abstração - Isolar as características do objeto, pensando e visando o que é essencial naquela contexto específico.
+2. Reuso - Reusar o código criado
+3. Encapsulamento - Encapsular o código, escondendo seus métodos e funções com intuito de proteção.
+
+-> Ao desenvolver software pensar no que é necessário naquela momento
+
+-> Estruturas básicas da OO:
+
+1. Classe - Uma classe define o comportamento de seus objetos, abstrai um conjunto de objetos com características similares.
+2. Atributo - Define sua estrutura de dados, e também são características daquela classe.
+3. Método - Porção do código disponibilizado pela classe. É executado quando ele é chamado, ou quando feita arequisição dele. 2 Métodos 
+especiais: 
+
+* Construtor - O construtor constroi um objeto. No java ao criar uma classe já vem como padrão um construtor default
+* Destrutor - O destrutor não destroi o objeto mas ajuda nessa tarefa. Só é necessário se preciasr liberar recursos para diminuir o consumo
+de memória por exemplo.
+* Sobrecarga - Sobrecarga é mudar a assinatura do mesmo método de acordo com a necessidade. 
+
+4. Objeto - Representação de um conceito/entidade. São instâncias de classes.
+5. Mensagem - Processo de ativação de um método de um objeto.
+
+-> Herança é o relacionamento entre classes. A classe filha ganha os atributos e métodos da classe mãe. É dividido em simplis e multipla,
+mas no java existe apenas a herança simples. Uma classe filha pode se tornar uma classe mãe.
+
+-> Upcast: o upcast é colocar a classe filha de forma generalizada exemplo: um gerente é um funcionario. Significa também subir um nível.
+
+-> Downcast: justamente descer um nível, criar um gerente a partir do tipo genérico funcionário. 
+
+-> Polimorfismo: mesma ação com comportamentos distintos. A classe mãe ter um método e suas filhas com esse metodo mas para contextos 
+distintos. Métodos abstratos
+
+-> Sobrescrita: mesma ação, podendo se comportar diferente. Só algumas filhas terão esse método.
+
+-> Associação possibilita um relacionamento entre classes, objetos, interagindo entre si para alcançar seus objetivos. Dividido em:
+
+1. Estrutural - composição e agregação. Na composição o relacionamento é tem um, toda pessoa tem um endereço. Já em herança é um, todo 
+gerente é um funcionário. Na agregação não tem tanta dependencia de um com o outro para existirem, logo se um deixar de existir o outro
+ainda pode continuar existindo
+2. Comportamental - dependência: depende de.
+
+-> Interface define um contrato a ser seguido pela classe que implementa a interface.
+
+-> Organização: pacotes e visibilidades. Pacotes são criados para separar classes e dividir em pastas seguindo o modelo MVC. Visibilidade
+é usada para determinar um limite que um método, atributo pode ser usada. Dividida em: public, onde é visto em qualquer lugar. Private,
+onde os atributos e métodos são visíveis apenas na classe. Protected, onde a classe, mesmo pacote e subclasses será visto.

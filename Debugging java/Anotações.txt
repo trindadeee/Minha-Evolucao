@@ -1,0 +1,14 @@
+--------------- Debugging java ---------------
+
+-> Erros de programação são denominados bugs e para encontrar e corrigir esses erros é chamado de depuração ou debugging.
+
+-> Existe 2 categorias de erros:
+
+1. Erros de sintaxe: São mais fáceis de se identificar, pois a própria IDE auxilia a identificar esses erros.
+2. Erros de semântica: erro na lógica de programação, o código esta sintaticamente correto, porém não faz o que esperava dele.
+
+-> Linguagens de alto nível tornam a depuração mais fácil, pois fornecem ferramentas para auxiliar, como o tratamento de excessões.
+
+-> Pilha de execução: toda invocação de um método é empilhada em uma estrutura de dados isolando a area de memoria de cada um.
+
+-> Stack trace é a matriz onde encontramos a pilha de execução da exceção

@@ -1,0 +1,28 @@
+---------------Trabalhando com Collections java----------------
+
+-> Collection é um objeto que agrupa vários elementos dentro de uma unidade. Serve para armazenar e processar conjunto de dados 
+eficientimente.
+
+-> A interface list permite elementos duplicados e garante a ordem de inserção.
+
+-> ArrayList é usada quando há a necessidade de pesquisas e a LinkedList é usada quando for usada bastante operações de inserção e exclusão.
+
+-> ArrayList implementa a interface list enquanto que a LinkedList implementa as interfaces List e Queue.
+
+-> A interface Set não permite elementos duplicados e não possui índice. Lembrando não é possível dar new em uma interface.
+
+-> Não é possivel pedir a posição de um elemento, pois como pedir ordem de elementos que vem aleatoriamento?
+
+-> No interface Map não é possivel colocar elementos com mesmo valor um ao lado do outro.
+
+-> Classe anonima são classes que não receberam um nome,é declarado e instanciado em uma única instrução.
+
+-> Interface um single abstract method é uma interface funcional, bastante parecido com o lambda.
+
+-> Lambda é uma função sem declaração, não sendo necessário por nome, tipo de retorno e o modificador de acesso.
+
+-> Reference method é um recurso que foi adicionado ao java na versão 8 e que permite fazer referencia a um metodo ou construtor e assim
+indicar em qual parte do codigo ele será utilizado.
+
+-> Streams API, trouxe uma nova opçao de manipulação das coleçoes do java, combinada com o lambda, auxiliar o desenvolvedor a fazer codigos
+com um nivel de compreensao melhor, além de auxiliar na manutenção.

@@ -1,0 +1,36 @@
+---------------Pensamento computacional----------------
+
+-> dividido em 4 pilares: 
+
+- Decompisoção: Pegar um problema grande e fragmentar ele para resolver de forma mais simples, ou seja dividir um grande problema em 
+problemas menores. Existem algumas estratégias:
+
+- Análise: Processo de quebrar e determinar partes menores e gerenciaveis, ou seja quebra o problema em pedaços menores e examina os 
+problemas menores.
+- Sintese: Contruir e combinar os elementos e juntar o projeto todo novamente, recompondo o problema original.
+- Sequencial: Onde as tarefas serao executadas numa ordem, ou seja dependem uma da outra.
+- Paralelo: Não depende de uma ordem pré-definida, pois é executado em paralelo.
+
+- Como decompor: identificar os dados, agrega-los para entregar a resolucao do problema.
+
+- Reconhecimento de padrões: Identificar similaridades dentro de um contexto(padrão comportamental)
+
+- Abstração: Abstrair um problema no caso eu tiro do especifico e coloca a ideia generalizada por exemplo.
+
+- Design de algoritmos: Automatizar problemas, define passo a passo do problema para determinar a solucao.
+
+- Reconhecimento de padrões: similiridades e diferenças.
+
+- Com o padrão, conseguo generalizar, com o objetivo de obter resoluçoes de problemas diferentes
+
+- Abstrair é observar um ou mais elementos para avaliar as caracteristicas e propriedades em separacao.
+
+- Abstracao é isolar um elemento da realidade
+
+- Lógica é a organizacao e planejamento das instruçoes para implementar um programa.
+
+- Generalizar para obter os pontos de interesse, abstrair.
+
+- Algoritmos: pseudocódigo(portugol);
+
+- Técnica estruturada eu tenho escolhas a fazer, já a técnica linear eu sigo em uma linha sem opcoes de escolha. A técnica modular 

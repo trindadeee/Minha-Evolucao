@@ -1,0 +1,15 @@
+--------------- Tratamento de Exceções java ----------------
+
+-> Exceção é um evento que interrompe o fluxo normal do programa.
+
+-> Ao tratar as exceções o programa fica mais robusto e confiável.
+
+-> Com o tratamento de exceção, o programa pode continuar executando.
+
+-> Error: Usado pela jvm que serve para indicar se existe algum problema de recurso do programa.
+
+-> Unchecked(Runtime): Exceptions que podem ser evitadas se forem tratadas e analisadas pelo dev. Não é obrigado pelo compilador a tratar
+
+-> Checked(Exception): Exceptions que devem ser evitadas e tratadas para o programa funcionar.
+
+->  

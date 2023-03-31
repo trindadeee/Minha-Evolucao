@@ -1,1 +1,136 @@
 --------------- Introdução ao Git/GitHub --------------- 
+
+-> Software não é feito sosinho, mas sim de forma colaborativa.
+
+-> Git e GitHub são tecnologias complementares mas são diferentes.
+
+-> O que será aprendido usando as 2 tecnologias:
+
+1. Controle de versão;
+2. Armazenamento em nuvem;
+3. Trabalho em equipe;
+4. Melhorar seu código;
+5. Reconhecimento;
+
+-> No terminal para listar basta usar o codigo dir.
+
+-> Para entrar no diretório usa o cd/
+
+-> Para voltar do diretório basta usar cd .. 2 pontos.
+
+-> Para limpar o terminal usa o comando cls.
+
+-> O tab é usado para auto-completar.
+
+-> Para criar uma pasta basta colocar o comando mkdir e o nome da pasta desejada.
+
+-> Quando funciona o terminal nao mostra nenhuma mensagem.
+
+-> O echo printa no console o que for digitado.
+
+-> Para criar um arquivo eu uso echo hello > hello.txt
+
+-> Para deletar usa o del e o nome da pasta e o terminal pergunta se tem essa certeza. MAS ele deleta os arquivos dentro da pasta
+workspace não a pasta ou repositorio em si.
+
+-> Existe a diferença entre excluir um arquivo para um portfólio.
+
+-> Para navegar entre comandos ja criados eu uso a setinha para cima.
+
+-> Para remover o repositorio ou pasta com tudo dentro usa o comando rmdir workspace /S /Q. Se usar o comando sem essas flags que são os
+/S /Q o comando retorna uma frase dizendo que a pasta nao esta vazia entao talvez no caso se tivesse vazia entao funcionaria.
+
+-> O git é dividido em fundamentos, sendo alguns deles:
+
+1. SHA1:  a sigla SHA significa Algoritmo de Hash seguro, e é um conjunto de funçoes hash criptografadas. Essa encriptação gera um conjunto
+de caracteres identificador de 40 dígitos, é único e serve como identificação
+
+-> Através do código openssl sha1 eu consigo fazer um git gerar os 40 caracteres. Se eu mudar apenas de um ponto para virgula ele altera os
+40 caracteres para outros e se eu colocar como era originalmente ele volta a ter os 40 caracteres gerado com o texto original.
+
+-> Ao utilizar o git para gerar um código aleatorio ele devolve um sha de 40 caracteres mas se for usado de maneira diferente mesmo sendo 
+a mesma palavra em ambos os casos, utilizando o sha propriamente ele devolve um conjunto diferente de caracteres.
+
+-> Objetos fundamentais(Blob): tem 42 caracteres ele inicia com um \0 e depois os 40 caracteres. Mas para que retorne o mesmo conjunto de
+caracteres tem que especificar blob 9\0 conteudo onde o 9 é a quantidade de palavras de conteudo e o \0 é padrao do blob e apos esse comando
+usar o openssl sha1 retorna os mesmos caracteres exemplo mais visivel:
+
+- Usando o Git: echo 'conteudo' | git hash-object -- stdin 
+- Usando com o Blob: echo -e 'blob 9\0conteudo' | openssl sha1 somente dessa forma que retorna os mesmos caracteres se tratando do mesmo
+objeto. Mas usando sem o Blob então gera caracteres diferentes.
+
+-> Tree: armazenam os blobs. No caso o tree armazena os blobs, que armazena o sha, que armazena ate o nome do arquivo. Isso é o que o tree
+faz. E o blob so guarda o sha que é o identificador. Também usa o \0. Tree também é uma arvore
+
+-> O commit vai juntar tudo. O commit aponta para uma árvore, para o parente(no caso é o ultimo commit feito antes dele), para o autor, e
+aponta para uma mensagem. Tanbém tem um timestamp que é o tempo, o horario, data de quando ele foi criado. Também tem o sha1. Consegue 
+criar uma linha de tempo dos commites realizados.
+
+-> Git é um sistema distribuído seguro. Porque se houver alteracao em um commit vai refletir em todo o sistema, alterando os sha1.
+
+-> Chave ssh é uma forma de manter uma conexão segura com 2 máquinas.
+
+-> A chave que será posta no GitHub é a pública
+
+-> Comando ls é para listar; pwd mostra o caminho que foi seguido;
+
+-> O agent pid gerado com o numero aleatório significa que eu esta sendo iniciado um projeto
+
+-> Depois adiciona a chave privada
+
+-> Eu vo criar um tokens pessoal. Quando eu for dar um commit no GitHub eu passo meu usuario e senha do tokens que eu gerei no github. 
+
+-> Para clonar com o git clone pode fazer pelo https e no caso usa o token
+
+-> Para iniciar o git usa o comando git init; para mover arquivos e versionar usa o git add; e pra commitar usa git commit.
+
+-> No terminal sempre tem que começar com o git.
+
+-> Control + L limpa o terminal do git ou o clean tambem.
+
+-> O mkdir cria pastas
+
+-> C:/Workspace/livro-receitas/.git/ essa é uma pasta oculta entao quando eu uso o comando ls ele nao traz mas tem como usar uma flag pra
+isso. Para visualizar o arquivo oculto usa a flag ls -a.
+
+-> No html para fazer um titulo usa o h1, no caso do git # e para os outros tamanhos ##, ###... no caso isso é chamado markdown.
+
+-> No git init tem:
+
+1- Tracked: o git tem ciencia dele e é dividido em:
+
+* Unmodified: ainda nao foi modificado
+** Modified: foi modificado 
+*** Staged: onde fica os arquivos que tão se preparando para fazer parte de um agrupamento
+
+2- Untracked: o git não tem ciencia dele;
+
+-> Quando eu faço um commit o arquivo passa a pertencer ao meu repositório local e eu posso depois posso empurar pra o repositório remoto
+
+-> Quando eu faço um commit pego os arquivos que estavam na area de staging e coloco no repositorio local.
+
+-> O github é o repositorio remoto
+
+-> O git status vai dizer como os arquivos se encontram se é unmodified, staged...
+
+-> O comando mv leva um arquivo pra pasta desejada
+
+-> Tudo que eu fiz esta na minha máquina agora vou adicionar ao github no repositorio remoto. Eu uso o git remote add origin 
+https://github.com/trindadeee/livro-receitas.git onde o origin é padrão e o link é pego la no github quando eu crio um novo repositorio.
+Mas para empurrar pra o repositorio remoto uso o git push.
+
+-> Markdown é a linguagem que utiliza no github
+
+-> git push empurra para o repositorio remoto.
+
+-> Quando aparecer um erro porque alguem clonou meu codigo pra mexer e coloca no github e nos tivemos feito a mesma alteracao no mesmo canto
+vai aparecer um erro ai nesse caso eu uso o git pull para puxar o que esta no github pra resolver
+
+-> Para trazer o código de um repositorio qualquer pra minha maquina eu uso o git clone
+ 
+-> Posso criar o arquivo README.mv ao criar um novo repositório e também posso editar pelo próprio github mas pra persistir as mudanças 
+tem a opcao no proprio github de commitar as mudanças
+
+-> Também pode ser usado o git add. ponto para em seguida poder comitar.
+
+-> O -m no git commit é pra colocar uma mensagem
